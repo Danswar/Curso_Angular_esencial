@@ -5,8 +5,17 @@
 
 </h1>
 
+<!--Ejemplo de como inyectar un estilo, usando directivas-->
 <h2 [ngStyle] = "{'background' : colorHex()}">
   Color aleatorio generado inyectado con direciitvas, compruebalo refrescando el navegador
 </h2>
+
+<!--Componentes anidados-->
+<app-colores></app-colores>
+<app-colores></app-colores>
+<app-colores></app-colores>
+<app-colores></app-colores>
+<app-colores></app-colores>
+
 
 <router-outlet></router-outlet>
