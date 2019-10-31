@@ -1,0 +1,12 @@
+<h1 [ngStyle]="{'background':color}"> <!--ejemplo del despliegue de una directiva-->
+
+  {{title}} <!--Ejemplo del despliege de una propiedad-->
+  {{color}} <!--Ejemplo del despliege de una propiedad-->
+
+</h1>
+
+<h2 [ngStyle] = "{'background' : colorHex()}">
+  Color aleatorio generado inyectado con direciitvas, compruebalo refrescando el navegador
+</h2>
+
+<router-outlet></router-outlet>
