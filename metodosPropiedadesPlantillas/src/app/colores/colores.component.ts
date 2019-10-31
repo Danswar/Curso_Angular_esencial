@@ -13,12 +13,16 @@ export class ColoresComponent implements OnInit {
   }
 
   //metodos para generar un color aleatorio
+  
+  colorLocal:String;
+  
   generarRandom():String{ //generamos un numero aleatorio hexadecimal
     return Math.floor(Math.random()*255).toString(16);
   }
 
   colorHex():String{ //generamos un color aleatorio
-    return "#" + this.generarRandom() + this.generarRandom() + this.generarRandom();
+    this.colorLocal = "#" + this.generarRandom() + this.generarRandom() + this.generarRandom();
+    return this.colorLocal;
   }
 
 }

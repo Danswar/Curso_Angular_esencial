@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core'; //Agregamos el import 'Input' para recibir valores
 
 @Component({
   selector: 'app-saludo',
@@ -11,5 +11,8 @@ export class SaludoComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  @Input() colorNombre:String; //invocamos el input para recibir valores desde afuera
+  
 
 }

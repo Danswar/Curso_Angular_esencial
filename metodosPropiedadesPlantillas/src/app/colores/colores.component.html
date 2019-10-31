@@ -1,10 +1,10 @@
 
 <!--Ejemplo de como inyectar un estilo, usando directivas-->
-<h2 [ngStyle] = "{'background' : colorHex()}">
+<h1 [ngStyle] = "{'background' : colorHex()}">
     Componente anidado dentro del componente inicial de angular
     
     <!--Anidamos el componente "saludo"-->
-    <app-saludo></app-saludo>
-</h2>
+    <app-saludo [colorNombre]= "colorLocal"></app-saludo> <!--Enviamos un valor a este componente-->
+</h1>
 
   
